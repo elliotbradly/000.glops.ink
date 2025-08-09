@@ -57,7 +57,7 @@ Let's create a layout that would feel at home in a 1920s Bauhaus publication:
 
 .header {
   grid-column: 1 / -1;
-  background: #c13127; /* Bauhaus red */
+  background: var(--color-accent); /* Bauhaus peach */
   color: white;
   padding: var(--grid-8) var(--grid-4);
   text-transform: uppercase;
@@ -102,7 +102,7 @@ Piet Mondrian's geometric compositions translate beautifully to CSS Grid. Here's
 }
 
 .block-red {
-  background: #dc2626;
+  background: var(--color-accent);
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 }
@@ -141,7 +141,7 @@ The Russian constructivists used diagonal lines and dynamic compositions. We can
   transform: rotate(-45deg);
   font-size: clamp(3rem, 8vw, 8rem);
   font-weight: 900;
-  color: #dc2626;
+  color: var(--color-accent);
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -254,7 +254,7 @@ Modernist design is all about rhythm and repetition. Here's how to create a rhyt
 .rhythm-grid > :nth-child(4n+1) {
   grid-column: span 3;
   grid-row: span 4;
-  background: #c13127;
+  background: var(--color-accent);
 }
 
 .rhythm-grid > :nth-child(4n+2) {
@@ -297,7 +297,7 @@ One powerful modernist technique is overlapping elements to create depth and vis
 .foreground-block {
   grid-column: 6 / 13;
   grid-row: 3 / 9;
-  background: #dc2626;
+  background: var(--color-accent);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -363,15 +363,15 @@ Even the Bauhaus masters made mistakes. Here's a helpful debugging technique:
   background-image: 
     repeating-linear-gradient(
       0deg,
-      rgba(255, 0, 0, 0.1),
-      rgba(255, 0, 0, 0.1) 1px,
+      rgba(255, 218, 185, 0.1),
+      rgba(255, 218, 185, 0.1) 1px,
       transparent 1px,
       transparent var(--grid-unit)
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 0, 0, 0.1),
-      rgba(255, 0, 0, 0.1) 1px,
+      rgba(255, 218, 185, 0.1),
+      rgba(255, 218, 185, 0.1) 1px,
       transparent 1px,
       transparent var(--grid-unit)
     );
